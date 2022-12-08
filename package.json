@@ -2,7 +2,7 @@
   "name": "react-input-extenso",
   "version": "1.0.0",
   "description": "Componente React que retorna nome por extenso",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joaopedrodcosta01/react-input-por-extenso.git"
@@ -13,8 +13,10 @@
     "url": "https://github.com/joaopedrodcosta01/react-input-por-extenso/issues"
   },
   "homepage": "https://github.com/joaopedrodcosta01/react-input-por-extenso#readme",
+  "files": ["dist", "README.md"],
   "scripts": {
-    "start": "webpack-dev-server --hot --port=8080"
+    "start": "webpack-dev-server --hot --port=8080",
+    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -30,6 +32,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "numero-por-extenso": "^1.0.8"
   }
 }
