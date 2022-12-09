@@ -5,6 +5,8 @@
 | - Porcentagem
 | Todos esses números por extenso.
 
+[![NPM](https://img.shields.io/npm/l/react-input-extenso)](https://www.npmjs.com/package/react-input-extenso)
+![npm](https://img.shields.io/npm/v/react-input-extenso)
 ## Maneiras de instalar esta biblioteca:
 
 ### 1. NPM
